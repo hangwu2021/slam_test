@@ -1,3 +1,0 @@
-/home/hangwu/projects/slam_test/slambook2_learn/ch5/rgbdVision/build/CMakeFiles/rebuild_cache.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch5/rgbdVision/build/CMakeFiles/edit_cache.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch5/rgbdVision/build/CMakeFiles/rgbdVision.dir
