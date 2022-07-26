@@ -1,7 +1,0 @@
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/install/strip.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/install/local.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/install.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/list_install_components.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/rebuild_cache.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/edit_cache.dir
-/home/hangwu/projects/slam_test/slambook2_learn/ch4/build/CMakeFiles/ch4.dir
