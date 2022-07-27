@@ -1,2 +1,2 @@
 # slam_test
-Study SLAM
+slambook2_learn(《视觉SLAM14讲：从理论到实践2》)
