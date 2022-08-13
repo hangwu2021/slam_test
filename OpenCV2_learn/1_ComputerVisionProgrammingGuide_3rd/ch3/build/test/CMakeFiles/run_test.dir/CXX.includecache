@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/CommonInclude.h
+iostream
+-
+opencv2/core.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/imgproc.hpp
+-
+
+/home/hangwu/projects/slam_test/OpenCV2_learn/1_ComputerVisionProgrammingGuide_3rd/ch3/test/3-3-1.cpp
+CommonInclude.h
+/home/hangwu/projects/slam_test/OpenCV2_learn/1_ComputerVisionProgrammingGuide_3rd/ch3/test/CommonInclude.h
+
