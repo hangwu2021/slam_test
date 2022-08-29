@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/camera.cpp" "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src/CMakeFiles/myslam.dir/camera.cpp.o"
   "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/config.cpp" "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src/CMakeFiles/myslam.dir/config.cpp.o"
+  "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/g2o_types.cpp" "/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src/CMakeFiles/myslam.dir/g2o_types.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/eigen3"
   "../include"
+  "/usr/include/eigen3"
   "/usr/local/include/opencv"
   )
 

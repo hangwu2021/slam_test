@@ -14,5 +14,35 @@
 
 class EdgeProjectXYZRGBD : public g2o::BaseBinaryEdge<3, Eigen::Vector3d, g2o::VertexPointXYZ, g2o::VertexSE3Expmap>
 {
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+    virtual void computeError();
+    virtual void linearizeOplus();
+    virtual bool read(std::istream & is) {}
+    virtual bool write(std::ostream & os) const {}
+};
+
+class EdgeProjectXYZRGBDPoseOnly : public g2o::BaseUnaryEdge<3, Eigen::Vector3d, g2o::VertexSE3Expmap>
+{
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+    virtual void computeError();
+    virtual void linearizeOplus();
+    virtual bool read(std::istream& is) {}
+    virtual bool write(std::ostream& os) {}
     
+    Vector3d point_;
+};
+
+class EdgeProjectXYZ2UVPoseOnly : public g2o::BaseUnaryEdge<2, Eigen::Vector2d, g2o::VertexSE3Expmap>
+{
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+    virtual void computeError();
+    virtual void linearizeOplus();
+    virtual bool read(std::istream& is) {}
+    virtual bool write(std::ostream& os) {}
+    
+    Vector3d point_;
+    Camera* camera_;
 };

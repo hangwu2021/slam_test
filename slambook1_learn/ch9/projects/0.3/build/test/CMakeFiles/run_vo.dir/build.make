@@ -128,6 +128,36 @@ run_vo_EXTERNAL_OBJECTS =
 ../bin/run_vo: /usr/local/lib/libopencv_photo.so.3.4.15
 ../bin/run_vo: /usr/local/lib/libopencv_imgproc.so.3.4.15
 ../bin/run_vo: /usr/local/lib/libopencv_core.so.3.4.15
+../bin/run_vo: /usr/local/lib/libpangolin.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLX.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLU.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLEW.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libEGL.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libSM.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libICE.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libX11.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libXext.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLX.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLU.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libGLEW.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libEGL.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libSM.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libICE.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libX11.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libXext.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libdc1394.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libavcodec.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libavformat.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libavutil.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libswscale.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libavdevice.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libpng.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libz.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libjpeg.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libtiff.so
+../bin/run_vo: /usr/lib/x86_64-linux-gnu/libIlmImf.so
 ../bin/run_vo: test/CMakeFiles/run_vo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/run_vo"
 	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_vo.dir/link.txt --verbose=$(VERBOSE)

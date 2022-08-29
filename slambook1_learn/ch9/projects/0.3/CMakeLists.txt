@@ -21,9 +21,20 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(Sophus REQUIRED)
 include_directories(${Sophus_INCLUDE_DIRS})
 
+# G2O
+find_package(G2O REQUIRED)
+include_directories(${G2O_INCLUDE_DIRS})
+
+# Pangolin
+find_package(Pangolin REQUIRED)
+include_directories(${Pangolin_INCLUDE_DIRS})
+message(STATUS ${Pangolin_INCLUDE_DIRS})
+
 set(THIRD_PARTY_LIBS
     ${OpenCV_LIBS}
     ${Sophus_LIBRARIES}
+    g2o_core g2o_stuff g2o_types_sba
+    ${Pangolin_LIBRARIES}
 )
 
 ################ denpendencies #################

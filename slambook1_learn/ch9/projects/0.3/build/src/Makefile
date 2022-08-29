@@ -125,6 +125,33 @@ myslam/fast:
 	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
 .PHONY : myslam/fast
 
+camera.o: camera.cpp.o
+
+.PHONY : camera.o
+
+# target to build an object file
+camera.cpp.o:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.o
+.PHONY : camera.cpp.o
+
+camera.i: camera.cpp.i
+
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.cpp.i:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.i
+.PHONY : camera.cpp.i
+
+camera.s: camera.cpp.s
+
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.cpp.s:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.s
+.PHONY : camera.cpp.s
+
 config.o: config.cpp.o
 
 .PHONY : config.o
@@ -152,6 +179,33 @@ config.cpp.s:
 	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+g2o_types.o: g2o_types.cpp.o
+
+.PHONY : g2o_types.o
+
+# target to build an object file
+g2o_types.cpp.o:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/g2o_types.cpp.o
+.PHONY : g2o_types.cpp.o
+
+g2o_types.i: g2o_types.cpp.i
+
+.PHONY : g2o_types.i
+
+# target to preprocess a source file
+g2o_types.cpp.i:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/g2o_types.cpp.i
+.PHONY : g2o_types.cpp.i
+
+g2o_types.s: g2o_types.cpp.s
+
+.PHONY : g2o_types.s
+
+# target to generate assembly for a file
+g2o_types.cpp.s:
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/g2o_types.cpp.s
+.PHONY : g2o_types.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,9 +215,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... myslam"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... g2o_types.o"
+	@echo "... g2o_types.i"
+	@echo "... g2o_types.s"
 .PHONY : help
 
 

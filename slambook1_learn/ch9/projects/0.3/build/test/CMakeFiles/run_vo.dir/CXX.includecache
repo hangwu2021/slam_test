@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/camera.hpp
+common_include.hpp
+../include/common_include.hpp
+
 ../include/common_include.hpp
 iostream
 -
@@ -55,6 +59,12 @@ common_include.hpp
 /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/test/run_vo.cpp
 config.hpp
 /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/test/config.hpp
+camera.hpp
+/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/test/camera.hpp
+pangolin/pangolin.h
+-
+unistd.h
+-
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

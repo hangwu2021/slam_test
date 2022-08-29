@@ -70,14 +70,44 @@ src/CMakeFiles/myslam.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/config.cpp.s"
 	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/config.cpp -o CMakeFiles/myslam.dir/config.cpp.s
 
+src/CMakeFiles/myslam.dir/camera.cpp.o: src/CMakeFiles/myslam.dir/flags.make
+src/CMakeFiles/myslam.dir/camera.cpp.o: ../src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/myslam.dir/camera.cpp.o"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myslam.dir/camera.cpp.o -c /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/camera.cpp
+
+src/CMakeFiles/myslam.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myslam.dir/camera.cpp.i"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/camera.cpp > CMakeFiles/myslam.dir/camera.cpp.i
+
+src/CMakeFiles/myslam.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/camera.cpp.s"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/camera.cpp -o CMakeFiles/myslam.dir/camera.cpp.s
+
+src/CMakeFiles/myslam.dir/g2o_types.cpp.o: src/CMakeFiles/myslam.dir/flags.make
+src/CMakeFiles/myslam.dir/g2o_types.cpp.o: ../src/g2o_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/myslam.dir/g2o_types.cpp.o"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myslam.dir/g2o_types.cpp.o -c /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/g2o_types.cpp
+
+src/CMakeFiles/myslam.dir/g2o_types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myslam.dir/g2o_types.cpp.i"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/g2o_types.cpp > CMakeFiles/myslam.dir/g2o_types.cpp.i
+
+src/CMakeFiles/myslam.dir/g2o_types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/g2o_types.cpp.s"
+	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/src/g2o_types.cpp -o CMakeFiles/myslam.dir/g2o_types.cpp.s
+
 # Object files for target myslam
 myslam_OBJECTS = \
-"CMakeFiles/myslam.dir/config.cpp.o"
+"CMakeFiles/myslam.dir/config.cpp.o" \
+"CMakeFiles/myslam.dir/camera.cpp.o" \
+"CMakeFiles/myslam.dir/g2o_types.cpp.o"
 
 # External object files for target myslam
 myslam_EXTERNAL_OBJECTS =
 
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/config.cpp.o
+../lib/libmyslam.so: src/CMakeFiles/myslam.dir/camera.cpp.o
+../lib/libmyslam.so: src/CMakeFiles/myslam.dir/g2o_types.cpp.o
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/build.make
 ../lib/libmyslam.so: /usr/local/lib/libopencv_stitching.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_superres.so.3.4.15
@@ -108,6 +138,7 @@ myslam_EXTERNAL_OBJECTS =
 ../lib/libmyslam.so: /usr/local/lib/libopencv_ximgproc.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_xobjdetect.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_xphoto.so.3.4.15
+../lib/libmyslam.so: /usr/local/lib/libpangolin.so
 ../lib/libmyslam.so: /usr/local/lib/libopencv_highgui.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_videoio.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_shape.so.3.4.15
@@ -127,8 +158,37 @@ myslam_EXTERNAL_OBJECTS =
 ../lib/libmyslam.so: /usr/local/lib/libopencv_photo.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_imgproc.so.3.4.15
 ../lib/libmyslam.so: /usr/local/lib/libopencv_core.so.3.4.15
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLX.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLU.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLEW.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libEGL.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libSM.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libICE.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libX11.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libXext.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLX.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLU.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libGLEW.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libEGL.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libSM.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libICE.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libX11.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libXext.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libdc1394.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libavcodec.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libavformat.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libavutil.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libswscale.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libavdevice.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libpng.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libz.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libtiff.so
+../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libIlmImf.so
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../../lib/libmyslam.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../../lib/libmyslam.so"
 	cd /home/hangwu/projects/slam_test/slambook1_learn/ch9/projects/0.3/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myslam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
